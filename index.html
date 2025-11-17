@@ -8,42 +8,40 @@
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="container">
+  <nav class="menu-cubugu">
+    <div class="sayfa-kutusu">
       <div class="logo">Emre Panel</div>
-      
-      <ul class="nav-links">
+      <ul class="menu-linkleri">
         <li><a href="index.html">Anasayfa</a></li>
         <li><a href="raporlar.html">Raporlar</a></li>
         <li><a href="ayarlar.html">Ayarlar</a></li>
       </ul>
-
     </div>
   </nav>
 
-  <div class="container">
+  <div class="sayfa-kutusu">
     
     <header>
       <h1>Proje Takip Panelim</h1>
     </header>
 
-    <section class="summary-container">
-      <div class="card summary-item">
+    <section class="ozet-kutulari">
+      <div class="kart ozet-kart">
         <h3>Toplam Proje</h3>
-        <p class="summary-number">3</p>
+        <p class="ozet-sayi">3</p>
       </div>
-      <div class="card summary-item">
+      <div class="kart ozet-kart">
         <h3>Tamamlanan</h3>
-        <p class="summary-number">1</p>
+        <p class="ozet-sayi">1</p>
       </div>
-      <div class="card summary-item">
+      <div class="kart ozet-kart">
         <h3>Devam Eden</h3>
-        <p class="summary-number">2</p>
+        <p class="ozet-sayi">2</p>
       </div>
     </section>
 
     <main>
-      <section class="card">
+      <section class="kart">
         <h2>Aktif Projelerim</h2>
         <ul>
           <li>Internet Programcılığı Projesi</li>
@@ -52,15 +50,15 @@
         </ul>
       </section>
 
-      <section class="card">
+      <section class="kart">
         <h2>Yeni Proje Ekle</h2>
         
         <form id="projeFormu">
-          <div class="form-grup">
+          <div class="form-bolumu">
             <label for="projeAdi">Proje Adı:</label>
             <input type="text" id="projeAdi" placeholder="Örn: Yeni Mobil Uygulama">
           </div>
-          <div class="form-grup">
+          <div class="form-bolumu">
             <label for="projeDurum">Durum:</label>
             <select id="projeDurum">
               <option value="bekliyor">Analiz Bekliyor</option>
@@ -68,13 +66,13 @@
               <option value="gelistirme">Geliştirme</option>
             </select>
           </div>
-          <button id="yeniProjeBtn" class="button">
+          <button id="yeniProjeBtn" class="buton">
             Yeni Proje Ekle
           </button>
         </form>
       </section>
 
-      <section class="card">
+      <section class="kart">
         <h2>Proje İlerleme Durumu</h2>
         <table>
           <thead>
@@ -84,9 +82,9 @@
               <th>Bitiş Tarihi</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="projeListesi">
             <tr>
-              <td>Internet Programcılığı Projesi</td>
+              <td>İnternet Programcılığı Projesi</td>
               <td>Tasarım Aşamasında</td>
               <td>30.12.2025</td>
             </tr>
@@ -105,7 +103,9 @@
       </section>
     </main>
     
-  </div> <footer>
+  </div> 
+
+  <footer>
     <p>Emre Taştanberk | 24301071009</p>
   </footer>
 

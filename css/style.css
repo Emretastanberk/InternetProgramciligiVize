@@ -1,32 +1,29 @@
-/* Genel Sayfa Stilleri */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #f0f2f5;
   color: #333;
   margin: 0;
-  padding: 0; /* Body'den padding'i kaldırdık */
+  padding: 0;
 }
 
-.container {
+.sayfa-kutusu {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px; /* Asıl içeriğe padding verdik */
+  padding: 20px;
 }
 
-/* YENİ: Navbar Stilleri */
-.navbar {
-  background-color: #1d3557; /* Koyu mavi */
+.menu-cubugu {
+  background-color: #1d3557;
   color: white;
   padding: 15px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   margin-bottom: 20px;
 }
 
-.navbar .container {
+.menu-cubugu .sayfa-kutusu {
   display: flex;
-  justify-content: space-between; /* Logo ve linkleri ayırır */
+  justify-content: space-between;
   align-items: center;
-  padding: 0 20px; /* Navbar içindeki container'ın padding'i */
+  padding: 0 20px;
 }
 
 .logo {
@@ -34,28 +31,26 @@ body {
   font-weight: bold;
 }
 
-.nav-links {
+.menu-linkleri {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-.nav-links li {
+.menu-linkleri li {
   margin-left: 20px;
 }
 
-.nav-links a {
+.menu-linkleri a {
   color: white;
   text-decoration: none;
   font-size: 16px;
-  transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  color: #a8dadc; /* Açık mavi */
+.menu-linkleri a:hover {
+  color: #a8dadc;
 }
-
 
 header {
   text-align: center;
@@ -71,44 +66,36 @@ h2 {
   border-bottom: 2px solid #f1faee;
 }
 
-/* Kart Yapısı (Her bölümü ayırmak için) */
-.card {
+.kart {
   background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ddd;
   padding: 20px;
   margin-bottom: 25px;
-  overflow-x: auto; 
 }
 
-/* YENİ: Özet Kartları Stilleri */
-.summary-container {
-  display: flex;
-  flex-wrap: wrap; /* Mobilde alt alta gelmelerini sağlar */
-  gap: 20px; /* Kartlar arası boşluk */
+.ozet-kutulari {
   margin-bottom: 20px;
 }
 
-.summary-item {
-  flex: 1; /* Eşit yer kaplamalarını sağlar */
-  min-width: 150px; /* Minimum genişlik */
+.ozet-kart {
   text-align: center;
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-.summary-item h3 {
+.ozet-kart h3 {
   margin-top: 0;
   color: #457b9d;
 }
 
-.summary-number {
+.ozet-sayi {
   font-size: 32px;
   font-weight: bold;
-  color: #e63946; /* Kırmızı */
+  color: #e63946;
   margin: 10px 0 0 0;
 }
 
-
-/* 1. Liste Stilleri */
 ul {
   list-style-type: circle;
   padding-left: 20px;
@@ -119,45 +106,40 @@ ul li {
   margin-bottom: 5px;
 }
 
-/* YENİ: Form Stilleri */
-.form-grup {
+.form-bolumu {
   margin-bottom: 15px;
 }
 
-.form-grup label {
+.form-bolumu label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.form-grup input[type="text"],
-.form-grup select {
+.form-bolumu input[type="text"],
+.form-bolumu input[type="email"],
+.form-bolumu select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box; /* Padding'in genişliği etkilememesi için */
+  box-sizing: border-box;
 }
 
-/* 2. Buton Stilleri */
-.button {
+.buton {
   background-color: #e63946;
   color: white;
   border: none;
   padding: 12px 20px;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  width: 100%; /* Formun genişliğine uysun */
+  width: 100%;
 }
 
-.button:hover {
+.buton:hover {
   background-color: #d00000;
 }
 
-/* 3. Tablo Stilleri */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -175,11 +157,6 @@ table th {
   font-weight: bold;
 }
 
-table tbody tr:nth-child(even) {
-  background-color: #fdfdfd;
-}
-
-/* YENİ: Footer Stilleri */
 footer {
   text-align: center;
   padding: 20px;
@@ -188,23 +165,18 @@ footer {
   margin-top: 30px;
 }
 
-/* css/style.css dosyasının en altına ekleyin */
-
-
-/* Raporlar sayfası için ilerleme çubuğu stilleri */
-.progress-bar {
+.ilerleme-cubugu {
   background-color: #eee;
-  border-radius: 5px;
+  border: 1px solid #ccc;
   height: 25px;
   margin-bottom: 10px;
-  overflow: hidden; /* Taşmaları engeller */
 }
 
-.progress {
-  background-color: #457b9d; /* Koyu Mavi */
+.ilerleme {
+  background-color: #457b9d;
   color: white;
   padding: 4px 8px;
   height: 100%;
-  box-sizing: border-box; /* Padding yüksekliği etkilemesin */
+  box-sizing: border-box;
   font-size: 14px;
 }
