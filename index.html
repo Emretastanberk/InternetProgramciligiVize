@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Proje Takip Sayfası</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Emre Panel</div>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="raporlar.html">Raporlar</a></li>
+        <li><a href="ayarlar.html">Ayarlar</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <div class="container">
+    
+    <header>
+      <h1>Proje Takip Panelim</h1>
+    </header>
+
+    <section class="summary-container">
+      <div class="card summary-item">
+        <h3>Toplam Proje</h3>
+        <p class="summary-number">3</p>
+      </div>
+      <div class="card summary-item">
+        <h3>Tamamlanan</h3>
+        <p class="summary-number">1</p>
+      </div>
+      <div class="card summary-item">
+        <h3>Devam Eden</h3>
+        <p class="summary-number">2</p>
+      </div>
+    </section>
+
+    <main>
+      <section class="card">
+        <h2>Aktif Projelerim</h2>
+        <ul>
+          <li>Internet Programcılığı Projesi</li>
+          <li>Unity 3D Oyun Geliştirme</li>
+          <li>Kişisel Blog Projesi</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Yeni Proje Ekle</h2>
+        
+        <form id="projeFormu">
+          <div class="form-grup">
+            <label for="projeAdi">Proje Adı:</label>
+            <input type="text" id="projeAdi" placeholder="Örn: Yeni Mobil Uygulama">
+          </div>
+          <div class="form-grup">
+            <label for="projeDurum">Durum:</label>
+            <select id="projeDurum">
+              <option value="bekliyor">Analiz Bekliyor</option>
+              <option value="tasarim">Tasarım Aşamasında</option>
+              <option value="gelistirme">Geliştirme</option>
+            </select>
+          </div>
+          <button id="yeniProjeBtn" class="button">
+            Yeni Proje Ekle
+          </button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Proje İlerleme Durumu</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Proje Adı</th>
+              <th>Durum</th>
+              <th>Bitiş Tarihi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Internet Programcılığı Projesi</td>
+              <td>Tasarım Aşamasında</td>
+              <td>30.12.2025</td>
+            </tr>
+            <tr>
+              <td>Unity 3D Oyun Geliştirme</td>
+              <td>Analiz Bekliyor</td>
+              <td>15.01.2026</td>
+            </tr>
+            <tr>
+              <td>Kişisel Blog</td>
+              <td>Yayında</td>
+              <td>Tamamlandı</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    
+  </div> <footer>
+    <p>Emre Taştanberk | 24301071009</p>
+  </footer>
+
+</body>
+</html>
